@@ -336,6 +336,10 @@ section>.container,
     }
 }
 
+.iti--allow-dropdown{
+    width: 94.3%;
+}
+
 /*=== Default Form ===*/
 
 .form-control,
@@ -344,7 +348,6 @@ section>.container,
     padding: 14px 30px;
     outline: 0;
     background-color: #f4f5f8;
-    border: 1px solid #f4f5f8;
     color: #686a6f;
     font-size: 0.9rem;
     width: 100%;
