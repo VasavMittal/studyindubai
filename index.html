@@ -32,24 +32,48 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <!-- Font Awesome Free CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+    <style>
+      /* Static testimonials grid (non-scrolling, exactly 3 items) */
+      .testimonial-section .testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+      @media (max-width: 991.98px) { .testimonial-section .testimonial-grid { grid-template-columns: repeat(2, 1fr); } }
+      @media (max-width: 575.98px) { .testimonial-section .testimonial-grid { grid-template-columns: 1fr; } }
+    </style>
 
 
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC1ZNRYX10"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16529687592"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-PC1ZNRYX10');
-    </script>
+  gtag('config', 'AW-16529687592');
+</script>
 
 
-    <link rel="canonical" href="https://studyindubai.net/best-study-abroad-consultants-in-dubai.php" />
+
+<meta name="facebook-domain-verification" content="q0kpejfutr5mrlhvyejiodbmjur6zz" />
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1717930452248902');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1717930452248902&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
 
 </head>
 
@@ -1259,7 +1283,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <h4 class="mt-5 text-center">Popular Masterâ€™s Scholarships to Study in Dubai for Indian
+                                <h4 class="mt-5 text-center">Popular Master's Scholarships to Study in Dubai for Indian
                                     Students:</h4>
                                 <div class="row mt-4">
                                     <div class="col-lg-6">
@@ -1523,7 +1547,7 @@
                 </div>
 
                 <div class="carousel-outer">
-                    <div class="testimonial-carousel owl-carousel owl-theme">
+                    <div class="testimonial-grid">
                         <!-- Testimonial Block -->
                         <div class="testimonial-block">
                             <div class="inner-box">
@@ -1560,9 +1584,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
@@ -1677,6 +1698,99 @@
 <div style="position:absolute;left:-50000000px"><span style="color: #ffffff"><a href="https://portugal.sk/">Slot</a></span></div>
         <div style="display:none;">
         </div>
+    </div>
+    <!-- Details Modal -->
+    <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content card-style shadow-lg border-0 overflow-hidden">
+          <div class="modal-body flex-grow-1">
+            <div class="modal-header text-white rounded-top-4" style="background: linear-gradient(135deg, #3e40bf, #696cc7);">
+              <h5 class="modal-title text-white fw-bold" id="detailsModalLabel" style="font-family: 'Chunk Five', serif; font-size: 25px;">
+                Please Share Your Details
+              </h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <form id="ctaDetailsForm">
+              <div class="p-3">
+
+                <!-- First Name -->
+                <div class="mb-3">
+                  <label for="fullName" class="form-label" style="font-family: 'League Spartan', sans-serif; font-size: 18px;">First Name</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your first name">
+                  </div>
+                  <span class="text-danger small" id="fullNameError"></span>
+                </div>
+
+                <!-- Last Name -->
+                <div class="mb-3">
+                  <label for="lastName" class="form-label" style="font-family: 'League Spartan', sans-serif; font-size: 18px;">Last Name</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                  </div>
+                  <span class="text-danger small" id="lastNameError"></span>
+                </div>
+
+                <!-- WhatsApp Number + Country Code -->
+                <div class="mb-3" style="width: 100%;">
+                <label for="whatsappNumber" class="form-label">WhatsApp Number</label>
+                <div class="input-group" style="width: 100%;">
+                    <span class="input-group-text bg-light"><i class="bi bi-whatsapp"></i></span>
+                    <input type="tel" id="whatsappNumber" class="form-control" placeholder="Enter WhatsApp number">
+                </div>
+                <span class="text-danger small" id="whatsappError"></span>
+                </div>
+
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <label for="email" class="form-label" style="font-family: 'League Spartan', sans-serif; font-size: 18px;">Email ID</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  </div>
+                  <span class="text-danger small" id="emailError"></span>
+                </div>
+
+                <!-- Business Name / Website -->
+                <div class="mb-3">
+                  <label for="businessName" class="form-label" style="font-family: 'League Spartan', sans-serif; font-size: 18px;">Business Name / Website</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light"><i class="bi bi-briefcase"></i></span>
+                    <input type="text" class="form-control" id="businessName" placeholder="Enter business name or website">
+                  </div>
+                </div>
+
+                <!-- Annual Revenue -->
+                <div class="mb-3">
+                  <label for="annualRevenue" class="form-label" style="font-family: 'League Spartan', sans-serif; font-size: 18px;">Marketing Budget</label>
+                  <input type="text" class="form-control" id="annualRevenue" placeholder="Enter Marketing Budget">
+                </div>
+
+                <!-- Convenient Time -->
+                <div class="mb-3">
+                  <label for="connectTime" class="form-label" style="font-family: 'League Spartan', sans-serif; font-size: 18px;">Convenient Time to Connect</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light"><i class="bi bi-clock"></i></span>
+                    <input type="text" class="form-control" id="connectTime" placeholder="e.g., 4:00 PM - 5:00 PM">
+                  </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex justify-content-between mt-4">
+                  <button type="button" class="btn btn-outline-secondary px-4 py-2" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary px-4 py-2" id="submitForm" style="background-color: #5f5fb3;">Submit</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
     </div>
     <div style="position:absolute;left:-50000000px"><span style="color: #ffffff"><a href="https://cirkularnaekonomija.org/" rel="dofollow" target="_blank">WINSTRIKE69</a></div>
 <div style="position:absolute;left:-50000000px"><span style="color: #ffffff"><a href="https://www.viral88mahjongwins.com/" rel="dofollow" target="_blank">VIRAL88</a></div>
@@ -1826,6 +1940,136 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/owl.js"></script>
     <script src="js/script.js"></script>
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- intl-tel-input JS -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.6.1/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.6.1/build/js/utils.js"></script>
+    <script>
+    (function(){
+      var ctas = document.querySelectorAll('a.theme-btn');
+      ctas.forEach(function(el){
+        el.addEventListener('click', function(e){
+          if (el.hasAttribute('data-allow-nav')) { return; }
+          e.preventDefault();
+          var modalEl = document.getElementById('detailsModal');
+          if (modalEl && window.bootstrap && bootstrap.Modal) {
+            var modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+            modal.show();
+          } else if (modalEl && window.jQuery && $(modalEl).modal) {
+            $(modalEl).modal('show');
+          }
+        });
+      });
+
+      // Initialize intl-tel-input on WhatsApp field
+      var iti;
+      var waInput = document.getElementById('whatsappNumber');
+      if (waInput && window.intlTelInput) {
+        iti = window.intlTelInput(waInput, {
+          initialCountry: 'auto',
+          utilsScript: 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.6.1/build/js/utils.js',
+          geoIpLookup: function(success){
+            fetch('https://ipapi.co/json')
+              .then(function(res){ return res.json(); })
+              .then(function(data){ success((data && data.country_code) ? data.country_code : 'IN'); })
+              .catch(function(){ success('IN'); });
+          }
+        });
+      }
+
+      // Add loader overlay element once
+      if (!document.getElementById('formLoaderOverlay')) {
+        var overlay = document.createElement('div');
+        overlay.id = 'formLoaderOverlay';
+        overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;z-index:1056;';
+        overlay.innerHTML = '<div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-weight:600;">Processing...</div>';
+        document.body.appendChild(overlay);
+      }
+
+      var form = document.getElementById('ctaDetailsForm');
+      if (form) {
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          $('#formLoaderOverlay').fadeIn();
+
+          // Get input values
+          var fullName = $('#fullName').val().trim();
+          var lastName = $('#lastName').val().trim();
+          var email = $('#email').val().trim();
+          var businessName = $('#businessName').val();
+          var connectTime = $('#connectTime').val();
+          var annualRevenue = $('#annualRevenue').val();
+          var url = sessionStorage.getItem('url') || window.location.href;
+          var timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+          var now = new Date();
+
+          var combineName = fullName + ' ' + lastName;
+          var formatted = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0') + '-' + String(now.getDate()).padStart(2,'0') + ' ' + String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0') + ':' + String(now.getSeconds()).padStart(2,'0');
+
+          function getPhoneDetails() {
+            if (iti && window.intlTelInputUtils) {
+              return iti.getNumber();
+            }
+            return waInput ? waInput.value : '';
+          }
+          var whatsappNumber = getPhoneDetails();
+
+          // Validation Regex
+          var nameRegex = /^[a-zA-Z\s]+$/;
+          var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+          // Validation Checks
+          if (fullName === '' || !nameRegex.test(fullName)) {
+            swal('Invalid Name','Please enter a valid first name (letters only).','error');
+            $('#formLoaderOverlay').fadeOut();
+            return;
+          }
+          if (lastName === '' || !nameRegex.test(lastName)) {
+            swal('Invalid Name','Please enter a valid last name (letters only).','error');
+            $('#formLoaderOverlay').fadeOut();
+            return;
+          }
+          if (whatsappNumber === '' || /[a-zA-Z]/.test(whatsappNumber)) {
+            swal('Invalid Number','Please enter a valid WhatsApp number (no letters allowed).','error');
+            $('#formLoaderOverlay').fadeOut();
+            return;
+          }
+          if (email === '' || !emailRegex.test(email)) {
+            swal('Invalid Email','Please enter a valid email address.','error');
+            $('#formLoaderOverlay').fadeOut();
+            return;
+          }
+          if (businessName === '') {
+            swal('Invalid Business Name','Please enter a valid Business Name.','error');
+            $('#formLoaderOverlay').fadeOut();
+            return;
+          }
+          if (annualRevenue === '') {
+            swal('Invalid Marketing Budget','Please enter a valid Marketing Budget.','error');
+            $('#formLoaderOverlay').fadeOut();
+            return;
+          }
+          if (connectTime === '') {
+            swal('Invalid Time','Please select a convenient time to connect.','error');
+            $('#formLoaderOverlay').fadeOut();
+            return;
+          }
+
+          // Success placeholder
+          $('#formLoaderOverlay').fadeOut();
+          var modalEl = document.getElementById('detailsModal');
+          if (modalEl && window.bootstrap && bootstrap.Modal) {
+            bootstrap.Modal.getInstance(modalEl)?.hide();
+          } else if (modalEl && window.jQuery && $(modalEl).modal) {
+            $(modalEl).modal('hide');
+          }
+          form.reset();
+          swal('Submitted','Thanks! We\'ll get back to you shortly.','success');
+        });
+      }
+    })();
+    </script>
 </body>
 
 </html>
