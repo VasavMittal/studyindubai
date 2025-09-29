@@ -14552,7 +14552,7 @@ tbody tr:hover {
         font-weight: unset;
         position: absolute;
         width: 40%;
-        left: 30px;
+        margin-left: -8rem;
         top: 0;
         white-space: normal;
     }
