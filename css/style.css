@@ -14404,7 +14404,7 @@ Sidebar
 }
 
 .wrap-table100 {
-    width: 1170px
+    width: 100%
 }
 
 table {
@@ -14536,7 +14536,10 @@ tbody tr:hover {
     }
     table tbody tr td {
         padding-left: 40% !important;
-        margin-bottom: 24px
+        padding-top: 0px;
+        margin-bottom: 24px;
+        white-space: normal;
+        word-break: break-word;
     }
     table tbody tr td:last-child {
         margin-bottom: 0
@@ -14550,13 +14553,18 @@ tbody tr:hover {
         position: absolute;
         width: 40%;
         left: 30px;
-        top: 0
+        top: 0;
+        white-space: normal;
     }
     table tbody tr td:nth-child(1):before {
-        content: "Program"
+        content: "Scholarship Name"
     }
-    table tbody tr td:nth-child(2):before {
-        content: "Average Annual Tuition Fees(in AED)"
+    /* Hide Amount column on mobile */
+    table tbody tr td:nth-child(2) {
+        display: none;
+    }
+    table tbody tr td:nth-child(3):before {
+        content: "Expenses Covered"
     }
     .column4,
     .column5,
@@ -14580,6 +14588,15 @@ tbody tr:hover {
     .container-table100 {
         padding-left: 15px;
         padding-right: 15px
+    }
+}
+
+/* Hide About Us images on mobile */
+@media only screen and (max-width: 575.98px) {
+    .about-section .image-column .image-box .image-1,
+    .about-section .image-column .image-box .image-2,
+    .about-section .image-column .image-box .image-3 {
+        display: none !important;
     }
 }
 
