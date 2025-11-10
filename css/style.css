@@ -3932,27 +3932,27 @@ Section Title
     background-size: cover;
 }
 
-.banner-section .slide-item .bg-image:after,
 .banner-section .slide-item .bg-image:before {
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--bg-theme-color1);
-    opacity: 0.2;
+    /* solid black overlay for improved contrast */
+    background-color: rgba(0,0,0,0.60);
     content: "";
 }
 
 .banner-section .slide-item .bg-image::after {
+    /* subtle accent gradient on top of the black overlay */
     background: -webkit-gradient(linear, left top, right top, from(var(--theme-color2)), color-stop(transparent), to(var(--theme-color3)));
     background: linear-gradient(to right, var(--theme-color2), transparent, var(--theme-color3));
-    opacity: 0.3;
+    opacity: 0.12;
 }
 
 .banner-section .content-box {
     position: relative;
-    padding: 220px 0 120px;
+    padding: 167px 0 120px;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -4010,11 +4010,11 @@ Section Title
 
 .banner-section .content-box .title {
     font-size: 60px;
-    line-height: 1em;
+    line-height: 1.1em;
     color: #ffffff;
     font-weight: 700;
     margin-bottom: 30px;
-    text-transform: uppercase;
+    text-transform: none !important;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -4032,7 +4032,7 @@ Section Title
 @media only screen and (max-width: 767px) {
     .banner-section .content-box .title {
         font-size: 48px;
-        line-height: 1em;
+        line-height: 1.1em;
     }
 }
 
@@ -14613,6 +14613,11 @@ tbody tr:hover {
     .about-section .image-column .image-box .image-2,
     .about-section .image-column .image-box .image-3 {
         display: none !important;
+    }
+
+    /* Banner background position for mobile */
+    .banner-section .slide-item .bg-image {
+        background-position: -12rem;
     }
 }
 
