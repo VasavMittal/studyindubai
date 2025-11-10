@@ -239,6 +239,22 @@ p {
     margin-bottom: 20px;
 }
 
+/* Banner text color overrides: ensure heading and points are white */
+.banner-section .content-box,
+.banner-section .content-box h1,
+.banner-section .content-box .sub-title,
+.banner-section .content-box .banner-points,
+.banner-section .content-box .banner-points li,
+.banner-section .content-box .btn-box .theme-btn {
+    color: #ffffff !important;
+}
+
+/* If buttons use background and need white text specifically */
+.banner-section .content-box .btn-box .theme-btn .btn-title {
+    color: #ffffff !important;
+}
+
+
 p a:not(.button):not(.btn):hover,
 p a:not(.button):not(.btn):focus {
     text-decoration: underline;
@@ -3896,7 +3912,7 @@ Section Title
 
 .banner-section .slide-item {
     position: relative;
-    min-height: 770px;
+    min-height: 45rem;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -3993,7 +4009,7 @@ Section Title
 }
 
 .banner-section .content-box .title {
-    font-size: 90px;
+    font-size: 60px;
     line-height: 1em;
     color: #ffffff;
     font-weight: 700;
